@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Tayade | Software Engineer | Java & AI Developer</title>
+    <meta name="description" content="Portfolio of Komal Tayade, a Computer Science graduate and Software Engineer specializing in Java, React.js, Data Structures, and Artificial Intelligence.">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Devicon & FontAwesome for Premium Tech Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 3D WebGL Canvas Container for Particles & Background -->
+    <div id="canvas-container"></div>
+
+    <!-- PREMIUM LOADER SCREEN -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-brand">KOMAL TAYADE</div>
+            <div class="loader-terminal" id="loader-text">INITIALIZING SYSTEM...</div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar" id="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & FLOATING NAVIGATION -->
+    <header>
+        <a href="#hero" class="logo">
+            <span>KT</span>.DEV
+        </a>
+        <nav id="nav-menu">
+            <a href="#hero" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag"><i class="fa-solid fa-bolt"></i> PORTFOLIO // v2.6.21</div>
+                    <h1 class="gradient-text">
+                        Building Intelligent <span>Software Solutions</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 580px;">
+                        Passionate Computer Science graduate designing scalable applications. Bridging the gap between robust backend systems and modern AI technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Floating 3D Avatar Card -->
+                <div class="hero-avatar-container">
+                    <div class="avatar-card glass-card">
+                        <div class="avatar-wrapper">
+                            <!-- Image path points to generated avatar, fallback to empty/placeholder if not loaded -->
+                            <img src="assets/avatar.png" alt="Komal Tayade Avatar" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400'">
+                            <div class="avatar-badge avatar-badge-top">
+                                <span></span> AI INTEGRATED
+                            </div>
+                            <div class="avatar-badge avatar-badge-bottom">
+                                <span></span> JAVA MASTER
+                            </div>
+                        </div>
+                        <div class="avatar-info">
+                            <h3>Komal Tayade</h3>
+                            <p>&lt;Software Engineer /&gt;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Decoding challenges and transforming code into smart digital realities.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am <strong>Komal Tayade</strong>, a Computer Science graduate passionate about Software Engineering, Artificial Intelligence, and Full-Stack Development. I enjoy solving complex problems using <strong>Data Structures & Algorithms (DSA)</strong> and building scalable applications with <strong>Java, MySQL, and React</strong>.
+                    </p>
+                    <p>
+                        My mission is to engineer high-performance systems that combine backend stability with intelligent frontend UX. I am constantly updating my skills in AI/ML model integration to make websites more dynamic and proactive.
+                    </p>
+                    <div style="margin-top: 15px;">
+                        <!-- Download Resume Placeholder -->
+                        <a href="#" class="btn btn-secondary" onclick="alert('Resume download triggered! Replace this link with your actual file path.'); return false;">
+                            <i class="fa-solid fa-file-arrow-down" style="margin-right: 8px;"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-card glass-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>B.E. Computer Science Graduate</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>DSA Solving</h3>
+                        <p>Strong problem-solving foundations</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>AI & ML</h3>
+                        <p>Integrating intelligent features</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h3>Full Stack</h3>
+                        <p>Java backends & React frontends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Tech Stack</h2>
+                <p>Technologies I master to bring robust solutions to life.</p>
+            </div>
+
+            <div class="skills-container">
+                <!-- 3D Skill Visualizer Container -->
+                <div class="skills-visual-wrapper glass-card">
+                    <canvas class="skills-webgl-canvas" id="skills-canvas"></canvas>
+                    <div class="skills-instructions"><i class="fa-solid fa-arrows-spin"></i> DRAG TO ROTATE HYPERSPHERE</div>
+                </div>
+
+                <!-- Grid of skills -->
+                <div class="skills-grid">
+                    <div class="skill-card glass-card" data-tech="java">
+                        <i class="devicon-java-plain skill-icon"></i>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="dsa">
+                        <i class="fa-solid fa-sitemap skill-icon"></i>
+                        <span class="skill-name">Data Structures</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="mysql">
+                        <i class="devicon-mysql-plain skill-icon"></i>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="react">
+                        <i class="devicon-react-original skill-icon"></i>
+                        <span class="skill-name">React.js</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="javascript">
+                        <i class="devicon-javascript-plain skill-icon"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="html">
+                        <i class="devicon-html5-plain skill-icon"></i>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="css">
+                        <i class="devicon-css3-plain skill-icon"></i>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="ai">
+                        <i class="fa-solid fa-microchip skill-icon"></i>
+                        <span class="skill-name">Artificial Intelligence</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="ml">
+                        <i class="fa-solid fa-network-wired skill-icon"></i>
+                        <span class="skill-name">Machine Learning</span>
+                    </div>
+                    <div class="skill-card glass-card" data-tech="git">
+                        <i class="devicon-github-original skill-icon"></i>
+                        <span class="skill-name">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A selection of projects that showcase engineering skills and technical depth.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project-ai.png" alt="AI Project" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&q=80&w=600'">
+                        <div class="project-overlay"></div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Intelligent Vision Platform</h3>
+                        <p>An advanced computer vision system designed to classify real-time imagery, utilizing custom neural networks for edge detection and pattern recognition.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project-fs.png" alt="Full Stack App" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600'">
+                        <div class="project-overlay"></div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Java Spring</span>
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Full-Stack Enterprise Dashboard</h3>
+                        <p>A complete full-stack web application featuring secure JWT authentication, rich analytical chart updates, and highly optimized database querying for live statistics.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project-ds.png" alt="DSA Repository" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&q=80&w=600'">
+                        <div class="project-overlay"></div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Algorithms</span>
+                            <span class="tech-badge">Complexity</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>DSA Problem Solving Engine</h3>
+                        <p>A structured repository documenting solutions to over 300+ LeetCode problems, categorized by data structures, with complexity breakdowns and test validations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-circle-play"></i> View Solutions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <!-- Use standard placeholder/custom visuals -->
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="Java Management System" class="project-img">
+                        <div class="project-overlay"></div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Java JDBC</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Swing GUI</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Java-based Management Suite</h3>
+                        <p>A desktop application managing employee schedules and database records, utilizing multi-threading for background tasks and efficient transactional queries.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-circle-play"></i> Screenshots</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600" alt="React Portfolio Website" class="project-img">
+                        <div class="project-overlay"></div>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Three.js</span>
+                            <span class="tech-badge">Framer Motion</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>React Interactive Portfolio</h3>
+                        <p>This actual personal workspace reimagined inside React, demonstrating dynamic state changes, 3D element rendering, and seamless scroll routes.</p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE SECTION (EXPERIENCE & EDUCATION) -->
+    <section id="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2>Journey & Education</h2>
+                <p>Timeline of academic progression and software development practice.</p>
+            </div>
+
+            <div class="timeline-wrapper">
+                <!-- Milestone 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2022 - 2026</span>
+                        <h3>Bachelor of Engineering</h3>
+                        <div class="timeline-subtitle">Computer Science & Engineering</div>
+                        <p class="timeline-desc">Acquired core principles of OS, Database Management Systems, Compiler Design, Software Engineering, and advanced algorithmic logic.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>DSA & Coding Foundations</h3>
+                        <div class="timeline-subtitle">Problem Solving & Optimization</div>
+                        <p class="timeline-desc">Solved hundreds of algorithmic problems on platforms like LeetCode and GeeksForGeeks, developing a deep understanding of time/space complexity.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2025</span>
+                        <h3>AI & ML Specialization</h3>
+                        <div class="timeline-subtitle">Deep Learning & Data Analysis</div>
+                        <p class="timeline-desc">Focused on training supervised models, understanding linear regression, decision trees, and incorporating pre-trained NLP models into backend systems.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2025 - 2026</span>
+                        <h3>Full-Stack Projects</h3>
+                        <div class="timeline-subtitle">Independent Development</div>
+                        <p class="timeline-desc">Engineered full-stack solutions integrating robust relational databases (MySQL) with interactive UI interfaces in React.js.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Achievements</h2>
+                <p>Recognitions, certifications, and highlights of my engineering journey.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Large bento item (Certifications list) -->
+                <div class="bento-item bento-large glass-card">
+                    <div>
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Certifications & Badges</h3>
+                        <p>Credential programs completed in Software Engineering and Artificial Intelligence.</p>
+                    </div>
+                    
+                    <div class="achievements-list">
+                        <div class="achievement-row">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div class="achievement-details">
+                                <h4>Java Programming Masterclass</h4>
+                                <p>Deep dive into object-oriented concepts, multithreading, and network streams.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-row">
+                            <i class="fa-solid fa-brain"></i>
+                            <div class="achievement-details">
+                                <h4>Machine Learning Specialization</h4>
+                                <p>Covering predictive analytics, model tuning, and data representation techniques.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-row">
+                            <i class="fa-solid fa-database"></i>
+                            <div class="achievement-details">
+                                <h4>Database Design with MySQL</h4>
+                                <p>Advanced indexing, database normalization, and query plan optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Item 2 -->
+                <div class="bento-item glass-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>LeetCode Profile</h3>
+                    <p>Active competitive programming. Solved 300+ problems across Arrays, Dynamic Programming, and Graph Traversals.</p>
+                </div>
+
+                <!-- Bento Item 3 -->
+                <div class="bento-item glass-card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Hackathons</h3>
+                    <p>Participated in college-level hackathons building AI tools, developing quick prototyping skills under strict time constraints.</p>
+                </div>
+
+                <!-- Bento Item 4 -->
+                <div class="bento-item glass-card">
+                    <i class="fa-solid fa-square-rss"></i>
+                    <h3>AI Learning Journey</h3>
+                    <p>Continuously investigating large language models and building pipelines to parse structured datasets into vector embeddings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have an exciting opportunity or project? Let's build something intelligent together.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-desc">
+                        I am always open to exploring full-time opportunities, internship options, or collaborative coding projects in software engineering and AI.
+                    </div>
+                    
+                    <div class="contact-channels">
+                        <!-- Email -->
+                        <div class="contact-channel-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-details-text">
+                                <h4>EMAIL</h4>
+                                <p>komaltayade.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="contact-channel-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-details-text">
+                                <h4>LOCATION</h4>
+                                <p>Pune, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Networks -->
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com" target="_blank" class="social-icon" aria-label="LeetCode">
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form glass-card" id="portfolio-contact-form">
+                    <div class="form-group">
+                        <label for="form-name">Name</label>
+                        <input type="text" id="form-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" rows="5" placeholder="Let's talk about the Software Engineering role..." required></textarea>
+                    </div>
+                    
+                    <div class="form-status" id="form-status-msg"></div>
+                    
+                    <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+                        Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">KT<span>.</span></a>
+                <div class="footer-text">
+                    &copy; 2026 Komal Tayade. Designed for High Performance.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CDN SCRIPTS (Three.js, OrbitControls, GSAP, ScrollTrigger) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="three-bg.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
